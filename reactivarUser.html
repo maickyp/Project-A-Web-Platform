@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+
+
+<script>
+    if (sessionStorage.getItem('userType')) {
+        if (sessionStorage.getItem('userType') == 1) {
+
+        }
+        else {
+            alert("Debes ser administrador para agregar usuarios");
+            window.location.replace("profile.html");
+        }
+    } else {
+        alert("Debes loguearte");
+        window.location.replace("index.html");
+    }
+</script>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <title>Asesorias Online</title>
+</head>
+
+<body style="height: auto; background-image: url('img/background.jpg'); background-size: 100% 100%;"
+    class="layout-top-nav">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand-md navbar-white navbar-light">
+            <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" class="brand-image img-circle elevation-3" style="opacity: .8"
+                            height="33px">
+                        <span class="brand-text font-weight-light">Asesorias Online</span>
+                    </a>
+
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                        <!-- Left navbar links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="adminIndex.html" class="nav-link">Admin</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <!-- ./Navbar -->
+    </div>
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2 justify-content-center">
+                <div class="col-sm-6 text-center">
+                    <h1>Reactivar a un usuario</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+
+    <div class="row justify-content-center">
+        <!-- Card  -->
+        <div class="col-sm-8">
+            <div class="card card-primary">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row justify-content-center text-center" id="asesoresCard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Card  -->
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="scripts/js/adminlte.min.js"></script>
+
+    <script src="scripts/js/reactivarUser.js"></script>
+
+
+</body>
+
+</html>

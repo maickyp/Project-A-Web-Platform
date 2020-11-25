@@ -1,0 +1,8 @@
+css/
+plugins/
+scripts/php/webhost/
+
+# Ignore images
+*.jpg
+*.png
+*.gif
